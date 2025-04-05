@@ -1,0 +1,182 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f5c063;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: #1e1e1e;
+    color: #f5c063;
+    padding: 30px 20px;
+    border-bottom: 3px solid #c29753;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+                   
+
+
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.info-item i {
+    font-size: 1.5em;
+    color: #f5c063;
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f5c063;
+    color: #121212;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #c29753;
+    transform: scale(1.1);
+}
+
+.contact-form {
+    flex: 1 1 45%;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #f5c063;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c063;
+    border-radius: 5px;
+    background: #121212;
+    color: #f5c063;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5c063;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #c29753;
+    transform: scale(1.05);
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+    background-color: #e0e0e0; /* Light grey background representing the map */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+.road {
+    position: absolute;
+    background-color: #b0b0b0; /* Grey color representing roads */
+}
+.road.horizontal {
+    width: 100%;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.road.vertical {
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.marker {
+    position: absolute;
+    top: 60%; 
+    left: 55%; 
+    width: 24px;
+    height: 24px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+}
+.marker::after {
+    content: 'Restaurant Suneo';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+footer {
+    background-color: #222;
+    color: #f4a64c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

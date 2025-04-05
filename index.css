@@ -1,0 +1,255 @@
+/* Import Google Fonts */
+@import url(sueno\ img.jpg);
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c1d16; /* Deep espresso brown */
+    color: #e0c9a6; /* Soft golden-beige */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(44, 29, 22, 0.95); /* Dark brown with slight transparency */
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Hapësirë mes logos dhe titullit */
+}
+
+.circle-logo {
+    width: 90px; 
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4a373; /* Kornizë elegante rreth logos */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container h2 {
+    font-size: 26px;
+    color: #e0c9a6;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #e0c9a6;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #d4a373; /* Gold on hover */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('restaurant-background.jpg') center/cover no-repeat;
+    color: #fff3e0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 29, 22, 0.6); /* Dark overlay for contrast */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+    color: #e0c9a6;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f5e8d8;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #b07d3e, #d4a373);
+    color: white;
+    padding: 14px 35px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgba(200, 155, 60, 0.5);
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(200, 155, 60, 0.8);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 80px 10%;
+    background: #3a261c; /* Rich brown */
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #e0c9a6;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+.about p {
+    font-size: 20px;
+    color: #f5e8d8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Style for the .aboutt section */
+.aboutt {
+    background-color: #53362b;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.aboutt h2 {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    color: #a15c34;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.aboutt div a {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    color: #6d3a31;
+    text-decoration: none;
+    border-bottom: 2px solid #612c1f;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.aboutt div a:hover {
+    color: #4e3526;
+    border-bottom-color: #5a2f27;
+}
+
+button {
+    background-color: #aa6f41;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+button:hover {
+    background-color: #8B5E3C;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #5F3B26;
+    transform: translateY(0);
+}
